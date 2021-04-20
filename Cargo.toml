@@ -10,7 +10,11 @@ repository = "https://github.com/zcash/bn"
 license = "MIT OR Apache-2.0"
 
 [features]
-default = ["rustc-serialize"]
+default = ["rustc-serialize", "std"]
+
+std = [
+    "rand/std"
+]
 
 [[bench]]
 name = "api"
